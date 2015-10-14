@@ -1,0 +1,27 @@
+---
+skills:
+- id: 1
+  title: petting the cat
+  description: cat is soft so I touch her nicely
+  mastery_level: expert
+- id: 2
+  title: petting the cat
+  description: cat is soft so I touch her nicely
+  mastery_level: expert
+- id: 3
+  title: pet the cat
+  description: soft fur.
+  mastery_level: expert
+- id: 4
+  title: petting cats
+  description: soft cat
+  mastery_level: expert
+- id: 5
+  title: petting cats
+  description: soft cat
+  mastery_level: expert
+- id: 6
+  title: petting cats
+  description: soft
+  mastery_level: expert
+total: 6
