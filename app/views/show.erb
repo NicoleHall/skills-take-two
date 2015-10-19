@@ -5,3 +5,9 @@
 <p><%= @skill.description %></p>
 
 <p><%= @skill.mastery_level %></p>
+
+<a href="/skills/<%= @skill.id %>/edit">Edit Skill</a>
+
+<form action="/skills/<%= @skill.id %>/delete" method="POST">
+  <button type="submit">Delete Skill</button>
+</form>

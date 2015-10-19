@@ -1,19 +1,11 @@
 ---
 skills:
-- id: 1
-  title: petting the cat
-  description: cat is soft so I touch her nicely
-  mastery_level: expert
-- id: 2
-  title: petting the cat
-  description: cat is soft so I touch her nicely
-  mastery_level: expert
 - id: 3
   title: pet the cat
   description: soft fur.
   mastery_level: expert
 - id: 4
-  title: petting cats
+  title: petting cat
   description: soft cat
   mastery_level: expert
 - id: 5
@@ -24,4 +16,20 @@ skills:
   title: petting cats
   description: soft
   mastery_level: expert
-total: 6
+- id: 7
+  title: talking loudly
+  description: to my friends
+  mastery_level: expert
+- id: 8
+  title: stinky fart
+  description: fart
+  mastery_level: ''
+- id: 9
+  title: fart
+  description: fart
+  mastery_level: ''
+- id: 10
+  title: fart
+  description: fart
+  mastery_level: expert
+total: 10

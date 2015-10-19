@@ -3,7 +3,11 @@ require_relative 'skill'
 
 class SkillInventory
   def self.database
-    @database ||= YAML::Store.new("db/skill_inventory")
+    if ENV["RACK_ENV"] == "test"
+      @database ||= YAML::Store.new("db/skill_inventory_test")
+    else
+      @database ||= YAML::Store.new("db/skill_inventory")
+    end
   end
 
   def self.create(skill)
@@ -30,6 +34,14 @@ class SkillInventory
   def self.raw_skill(id)
     raw_skills.find do |skill|
       skill["id"] == id
+    end
+  end
+
+  def self.update(id, data)
+    database.transaction do
+      target = database['skills'].find { |skill| skill["id"] == id}
+      target["title"] = data[:title]
+      target["description"] = data[:description]
     end
   end
 
