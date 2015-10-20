@@ -1,7 +1,7 @@
 ---
 skills:
 - id: 3
-  title: pet the cat
+  title: pet the dog
   description: soft fur.
   mastery_level: expert
 - id: 4
@@ -20,10 +20,6 @@ skills:
   title: talking loudly
   description: to my friends
   mastery_level: expert
-- id: 8
-  title: stinky fart
-  description: fart
-  mastery_level: ''
 - id: 9
   title: fart
   description: fart

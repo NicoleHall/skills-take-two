@@ -1,4 +1,4 @@
-require 'models/skill_inventory'
+require_relative '../models/skill_inventory'
 
 class SkillsInventoryApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)

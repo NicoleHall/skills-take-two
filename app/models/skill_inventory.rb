@@ -15,7 +15,9 @@ class SkillInventory
       database['skills'] ||= []
       database['total'] ||= 0
       database['total'] += 1
-      database['skills'] << { "id" => database['total'], "title" => skill[:title], "description" => skill[:description], "mastery_level" => skill[:mastery_level] }
+      data = { "id" => database['total'], "title" => skill[:title], "description" => skill[:description], "mastery_level" => skill[:mastery_level] }
+      database['skills'] << data
+      Skill.new(data)
     end
   end
 
@@ -53,6 +55,12 @@ class SkillInventory
     database.transaction do
       database['skills'].delete_if { |skill| skill["id"] == id}
     end
+  end
+
+  def self.delete_all
+    database.transaction do
+    database['skills'] = []
+   end
   end
 
 end
